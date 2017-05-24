@@ -9,7 +9,7 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="container container-loves">
       <div class="columns">
         <div class="column is-one-third has-text-right">
           <h3 class="quarter">2017<br>Q2</h3>
@@ -51,9 +51,20 @@ $primary-invert: whitesmoke;
 
 @import '~bulma/bulma.sass';
 
+.container-loves {
+  padding: .75em
+}
+
 .quarter {
   font-size: 4em;
   line-height: 1;
   padding-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .quarter {
+    padding-top: .5rem;
+  }
+}
+
 </style>

@@ -13,6 +13,6 @@ export default {
 
 <style lang="scss">
 .love {
-  padding: 1.3rem 0.5rem 0.5rem;
+  padding: 1.3rem 0 0.5rem;
 }
 </style>
