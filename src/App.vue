@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
@@ -85,6 +85,14 @@ $primary-invert: whitesmoke;
   .quarter {
     padding-top: .5rem;
   }
+}
+
+.fa-heart {
+  color: $primary
+}
+
+footer.footer {
+  background-color: white;
 }
 
 </style>
