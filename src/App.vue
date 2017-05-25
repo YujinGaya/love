@@ -5,7 +5,7 @@
         <div class="container">
           <h1 class="title has-text-centered">
             <span class="icon is-large">
-              <i class="fa fa-heart"></i>
+              <i class="fa fa-heart" title="love"></i>
             </span>
           </h1>
         </div>
@@ -21,6 +21,22 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Love</strong> by <a href="http://github.com/YujinGaya">Yujin Gaya</a>. <br>
+            The source code is <a href="https://fedoraproject.org/wiki/Licensing/Beerware">Beerware</a>. <br>
+            The website content is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
+          </p>
+          <p>
+            <a class="icon" href="https://github.com/YujinGaya/love">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -55,7 +71,8 @@ $primary-invert: whitesmoke;
 @import '~bulma/bulma.sass';
 
 .container-loves {
-  padding: .75em
+  padding: .75em;
+  margin-bottom: 5em;
 }
 
 .quarter {
