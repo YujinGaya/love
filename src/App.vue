@@ -4,7 +4,9 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
-            럽
+            <span class="icon is-large">
+              <i class="fa fa-heart"></i>
+            </span>
           </h1>
         </div>
       </div>
@@ -15,7 +17,7 @@
           <h3 class="quarter">2017<br>Q2</h3>
         </div>
         <div class="column">
-          <love :love="love" v-for="love in loves"/>
+          <love :love="love" v-for="love in loves" :key="love.timestamp"/>
         </div>
       </div>
     </div>
@@ -42,6 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import '~bulma/sass/utilities/initial-variables';
 
 $blue: #72d0eb;
