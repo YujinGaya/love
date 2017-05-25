@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight" @click="beat=!beat">
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
             <span class="icon is-large">
-              <i class="fa fa-heart" title="love"></i>
+              <i class="fa fa-heart" :class="{beating:beat}" title="love"></i>
             </span>
           </h1>
         </div>
@@ -50,7 +50,8 @@ export default {
   name: 'app',
   data () {
     return {
-      loves: loves
+      loves: loves,
+      beat: true
     }
   },
   components: {
@@ -88,7 +89,13 @@ $primary-invert: whitesmoke;
 }
 
 .fa-heart {
-  color: $primary
+  color: $primary;
+  transition: all .4s;
+}
+
+.icon.is-large .fa.fa-heart.beating {
+  font-size: 4rem;
+  transition: all .4s;
 }
 
 footer.footer {
