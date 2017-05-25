@@ -17,7 +17,7 @@ npm run build
 
 ## Post Love
 
-make `{timestamp}.json` file in /loves folder and write something like this
+Make `{timestamp}.json` file in /loves folder and write something like this
 
 ``` json
 {
@@ -25,4 +25,18 @@ make `{timestamp}.json` file in /loves folder and write something like this
   "comment": "Take On Me by a-ha",
   "timestamp": 1495651099
 }
+```
+
+and rebuild
+``` bash
+npm run build
+```
+
+## Deploy
+
+To deploy your loves, simply run app.js script
+
+``` bash
+# It uses 80 port so you need to be sudoer
+node app.js
 ```
